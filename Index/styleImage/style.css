@@ -1,0 +1,249 @@
+body{
+  padding:0px;
+  margin:0;
+  border:0;
+  font-family:century gothic;
+}
+
+ul{
+  list-style:none;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:100%;
+  height:auto;
+  overflow:hidden;
+  magin:auto;
+}
+
+/*Header*/
+
+header .comp_logo{
+  float:left;
+  color:black;
+  margin-left:50px;
+}
+
+header .comp_logo h1{
+  margin:0;
+  animation-name:logoname;
+  animation-duration:2s;
+  margin-left:0px;
+}
+
+
+@keyframes logoname {
+  from {
+    margin-left:-500px;
+  }
+
+  to {
+    margin-left:0px;
+  }
+}
+
+
+header{
+  min-height: 50px;
+  width:100%;
+  position: fixed;
+  background-color: white;
+  padding:20px;
+  z-index:1;
+  box-shadow:1px 5px 50px 1px black;
+  color:black;
+  transition: ease .5s;
+}
+
+
+
+nav ul{
+  float:right;
+  margin-left:0px;
+  margin-right:85px;
+  animation-name:nav-slide;
+  animation-duration: 2s ;
+}
+
+@keyframes nav-slide {
+  from {
+    margin-right:-500px;
+  }
+
+  to {
+    margin-right:85px;
+  }
+}
+
+
+.active, .color{
+  color:#9da2b1;
+  font-weight:bold;
+  opacity:1;
+}
+
+.active:hover{
+  color:#9da2b1;
+  font-weight:bold;
+  opacity:1;
+  background-color:inherit;
+}
+
+nav ul li{
+  color:black;
+  display:inline;
+  margin-left:8px;
+  padding:10px;
+  transition:ease 1s;
+  opacity:.5;
+
+}
+
+nav ul li:hover{
+  background-color:red;
+  border-radius:5px;
+  color:white;
+  padding:10px;
+  opacity:1;
+
+}
+
+.invisible {
+  border-bottom: 5px red solid;
+  opacity:.9;
+}
+
+.others{
+  border:none;
+}
+
+.opacity_line{
+	opacity:0;
+}
+
+
+
+/*BANNER_SECTION*/
+
+div.banner{
+  background:url('img/bg.jpg');
+  background-size: cover;
+  background-position:0 50px;
+  background-repeat: no-repeat;
+  width:100%;
+  min-height:950px;
+  background-attachment:fixed;
+  z-index:-1;
+  animation-name:banner-slide;
+  animation-duration: 2s ;
+}
+
+
+@keyframes banner-slide{
+	from {
+		opacity:0;
+	}
+	
+	to {
+		opacity:.7
+	}
+}
+
+
+
+
+
+.container_text{
+  width:50%;
+  min-height: 50px;
+  background-color:black;
+  opacity:.7;
+  top:400px;
+  position:relative;
+  padding: 2vw;
+  border-radius:13px;
+}
+
+span.text{
+  font-size:3vw;
+  opacity:1;
+  color:#00ffd9;
+  font-family: helvetica;
+}
+
+.color2{
+  color:white;
+  font-weight:bold;
+}
+
+.redline{
+  width:100%;
+  background: red;
+  height:5px;
+  transition:ease ;
+}
+
+
+/*Content*/
+
+div.content{
+  background:url('img/banawe.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:950px;
+  
+  margin:0;
+
+}
+
+.content-animation{
+	animation-name:content-animation;
+	animation-duration:2s;
+	
+}
+
+@keyframes content-animation{
+	from {
+		
+		background:url('img/banawe.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		width:100%;
+		height:950px;
+		margin:0;
+		opacity:0;
+	}
+	
+	to {
+		background:url('img/banawe.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		width:100%;
+		height:950px;
+		margin:0;
+		opacity:1;
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

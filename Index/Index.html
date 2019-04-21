@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Sample</title>
+	<link rel="stylesheet" href="styleImage/style.css">
+
+	<script>
+
+	window.onscroll = function(){scrolling()};
+
+	function scrolling(){
+		if(document.body.scrollTop > 825 || document.documentElement.scrollTop > 825){
+			document.getElementById("navigation").className = "invisible";
+			document.getElementById("others").className = "invisible, others";
+			document.getElementById("redline").className = "opacity_line";
+			document.getElementById("content").className = "content-animation";
+		}else{
+			document.getElementById("navigation").className = "";
+			document.getElementById("redline").className = "redline";
+			document.getElementById("content").className = "content";
+		}
+	}
+
+
+
+	</script>
+</head>
+<body>
+
+
+	<header id="navigation">
+      <div class="container">
+				<div class="comp_logo">
+					<h1>
+						<span class="color">JDOM</span> <span id="others">Company</span>
+					</h1>
+				</div>
+        <nav>
+					<ul>
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#" id="others" class="hover">About Us</a></li>
+						<li><a href="#" id="others" class="hover">Product</a></li>
+					</ul>
+				</nav>
+      </div>
+    </header>
+
+	
+
+		<section>
+			<div class="container">
+				<div class="banner">
+					<center>
+					<div class="container_text">
+						<span class="text">Welcome to <span class="color2">JDOM</span> Company</span>
+					</div>
+				</center>
+				</div>
+			</div>
+		</section>
+
+		<div class="redline" id="redline"></div>
+
+
+		<section>
+			<div class="container">
+				<div class="content" id="content">
+				
+				</div>
+			</div>
+		</section>
+
+
+
+
+<Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br>
+<Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br>
+<Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br>
+<Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br><Br>
+
+
+
+
+
+
+</body>
+</html>
